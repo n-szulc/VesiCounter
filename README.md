@@ -194,7 +194,7 @@ We recommend to use VesiCounter in Google Colaboratory environment, but users wi
 
 3. Open the newly downloaded directory VesiCounter-master and save Jupyter Notebook `VesiCounter.ipynb` to `VesiCounter` directory of your Google Drive (the easiest way is to drag and drop).
 
-You may also copy the directory `inputs` from this directory into `VesiCounter` directory to run it for the first time with our sample exophers images.
+   You may also copy the directory `inputs` from this directory into `VesiCounter` directory to run it for the first time with our sample exophers images.
 
    If you want to learn more about Jupyter Notebooks, we recommend to watch this [video](https://www.youtube.com/watch?v=q_BzsPxwLOE)
 
