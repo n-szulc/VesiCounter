@@ -78,7 +78,7 @@ Each split Z-stack should be placed in a separate directory. Group of single ima
 
 ## How to automatically split Z-stacks to separate files using Fiji
 
-1. Download makro [export_images_folder.ijm](https://gist.github.com/lacan/16e12482b52f539795e49cb2122060cc) (click download zip in the right upper corner)
+1. Download macro [export_images_folder.ijm](https://gist.github.com/lacan/16e12482b52f539795e49cb2122060cc) (click download zip in the right upper corner)
 2. Open Fiji
 3. Plugins -> Macros -> Install -> [Choose path to downloaded ijm file]
 4. Prepare a directory with all Z-stacks (czi files)
@@ -117,7 +117,7 @@ Runing VesiCounter with `Save: Yes` parameter, as described in detail in Jupyter
 
 ## Connect Google Colaboratory with Google Drive
 
-	 1. Sign in to your Google account
+   1. Sign in to your Google account
 
    2. Proceed to My Drive -> More -> Connect more apps
 
@@ -164,7 +164,7 @@ You may either interrupt cell execution...
 ---
 **NOTE**
 
-*Counting vesicles or vesicles containing particular cellular elements may take time, especially for large image datasets.*
+*Counting vesicles or vesicles containing particular cellular components may take time, especially for large image datasets.*
 
 ---
 
