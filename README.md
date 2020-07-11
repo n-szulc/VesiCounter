@@ -81,10 +81,8 @@ Each split Z-stack should be placed in a separate directory. Group of single ima
 1. Download makro [export_images_folder.ijm](https://gist.github.com/lacan/16e12482b52f539795e49cb2122060cc) (click download zip in the right upper corner)
 2. Open Fiji
 3. Plugins -> Macros -> Install -> [Choose path to downloaded ijm file]
-
-Now prepare a directory with all Z-stacks (czi files).
-
-4. Plugins -> Macros -> export_images_folder -> [Choose path to directory with all Z-stacks]
+4. Prepare a directory with all Z-stacks (czi files)
+5. Plugins -> Macros -> export_images_folder -> [Choose path to directory with all Z-stacks]
 
 Now all the Z-stacks should be splitted to separate images (considering their different focal planes and channels)!
 
@@ -99,7 +97,7 @@ If we additionally want to detect vesicles containing a cellular component of in
 Quantification results as well as selected parameters will be saved in `VesiCounter/outputs_summmary/` as csv files with the timestamp and name appropriate to analysis type.
 
 <p align="center">
-<img src="docs/README_pics/sample_output.png" width="250" />
+<img src="docs/README_pics/sample_output.png" width="600" />
 </p>
 
 **Fig. 2.** Sample quantification result along with selected analysis parameters.
