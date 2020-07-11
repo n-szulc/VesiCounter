@@ -45,7 +45,7 @@ VesiCounter runs in the Google Colaboratory cloud environment; therefore, no add
 <img src="docs/README_pics/fig1.png" width="600" />
 </p>
 
-**Fig. 1A.** Two mCherry-tagged exophers secreted from body wall muscles of *C. elegans*. **1B** Detected two secreted exophers containing GFP-tagged mitochondria.
+**Fig. 1A.** Two mCherry-tagged exophers secreted from body wall muscles of *C. elegans*. **1B.** Detected two secreted exophers containing GFP-tagged mitochondria.
 
 # Highlights
 
@@ -97,7 +97,7 @@ If we additionally want to detect vesicles containing a cellular component of in
 Quantification results as well as selected parameters will be saved in `VesiCounter/outputs_summmary/` as csv files with the timestamp and name appropriate to analysis type.
 
 <p align="center">
-<img src="docs/README_pics/sample_output.png" width="600" />
+<img src="docs/README_pics/sample_output.png" width="700" />
 </p>
 
 **Fig. 2.** Sample quantification result along with selected analysis parameters.
