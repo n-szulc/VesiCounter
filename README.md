@@ -5,13 +5,13 @@
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
 - [Overview](#overview)
-- [Exophers detection](#exophers-detection)
+	- [Exophers detection](#exophers-detection)
 - [Highlights](#highlights)
+- [Algorithm](#algorithm)
+- [General pipeline](#general-pipeline)
 - [Input image formats](#input-image-formats)
 	- [How to automatically split Z-stacks to separate files using Fiji](#how-to-automatically-split-Z-stacks-to-separate-files-using-Fiji)
-- [Algorithm](#algorithm)
 - [Output](#output)
-- [General pipeline](#general-pipeline)
 - [How to start with Google Colaboratory](#how-to-start-with-google-colaboratory)
 	- [Connect Google Colaboratory with Google Drive](#connect-google-colaboratory-with-google-drive)
 	- [Google Colaboratory in a nutshell](#google-colaboratory-in-a-nutshell)
@@ -39,7 +39,7 @@ VesiCounter allows for two independent image analysis:
 
 VesiCounter runs in the Google Colaboratory cloud environment; therefore, no additional software installations nor any programming skills are required.
 
-# Exophers detection
+## Exophers detection
 
 <p align="center">
 <img src="docs/README_pics/fig1.png" width="600" />
@@ -53,6 +53,21 @@ VesiCounter runs in the Google Colaboratory cloud environment; therefore, no add
 2. Allows for easy and extensive parameter customization.
 3. Vesicles and their content can be fluorescently labeled in 5 different colors: red, green, orange, pink, and blue.
 4. Displayed all found objects in images so the user may easily change  detection parameters to set the thresholds according to needs.
+
+# Algorithm
+
+Makes circle Hough transform on images to detect round objects, filtering out circles not possessing defined percentage of selected color and continuous black halo. Remaining circles are considered as searched vesicles. For example, we search for red exophers. First, we detect all round objects on an image (also noisy ones) according to customized circle Hough transforms parameters. Next, circles that are not e.g., at least 40% red and are not e.g., at least 60% on a black background, were filtered out.
+
+If we additionally want to detect vesicles containing a cellular component of interest marked with a different color, we check 3 corresponding images (focal planes -1, 0, +1) from the second channel to see if our correctly detected vesicles are e.g., at least 2% green.
+
+# General pipeline
+
+<p align="center">
+<img src="docs/README_pics/pipeline.png" width="250" />
+</p>
+
+**Fig. 3.** Simplified pipeline; all the instructions regarding quantification analysis and customing parameters can be found in the Jupyter Notebook.
+
 
 # Input image formats
 
@@ -86,11 +101,7 @@ Each split Z-stack should be placed in a separate directory. Group of single ima
 
 Now all the Z-stacks should be splitted to separate images (considering their different focal planes and channels)!
 
-# Algorithm
 
-Makes circle Hough transform on images to detect round objects, filtering out circles not possessing defined percentage of selected color and continuous black halo. Remaining circles are considered as searched vesicles. For example, we search for red exophers. First, we detect all round objects on an image (also noisy ones) according to customized circle Hough transforms parameters. Next, circles that are not e.g., at least 40% red and are not e.g., at least 60% on a black background, were filtered out.
-
-If we additionally want to detect vesicles containing a cellular component of interest marked with a different color, we check 3 corresponding images (focal planes -1, 0, +1) from the second channel to see if our correctly detected vesicles are e.g., at least 2% green.
 
 # Output
 
@@ -104,13 +115,6 @@ Quantification results as well as selected parameters will be saved in `VesiCoun
 
 Runing VesiCounter with `Save: Yes` parameter, as described in detail in Jupyter Notebook, will save all images copies to appropriate directory; detected vesicles will be marked as yellow circles, so user may visually inspect the results and optimize detection parameters.
 
-# General pipeline
-
-<p align="center">
-<img src="docs/README_pics/pipeline.png" width="250" />
-</p>
-
-**Fig. 3.** Simplified pipeline; all the instructions regarding quantification analysis and customing parameters can be found in the Jupyter Notebook.
 
 
 # How to start with Google Colaboratory
