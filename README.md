@@ -103,13 +103,13 @@ Now all the Z-stacks should be splitted to separate images (considering their di
 
 # Output
 
-Quantification results as well as selected parameters will be saved in `VesiCounter/outputs_summmary/` as csv files with the timestamp and name appropriate to analysis type.
+Quantification results as well as analysis parameters will be saved in `VesiCounter/outputs_summmary/` as csv files with the timestamp and name appropriate to analysis type.
 
 <p align="center">
 <img src="docs/README_pics/sample_output.png" width="700" />
 </p>
 
-**Fig. 2.** Sample quantification result along with selected analysis parameters.
+**Fig. 2.** Sample vesicles with components quantification results along with analysis parameters.
 
 Runing VesiCounter with `Save: Yes` parameter, as described in detail in Jupyter Notebook, will save all images copies to appropriate directory; detected vesicles will be marked as yellow circles, so user may visually inspect the results and optimize detection parameters.
 
