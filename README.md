@@ -56,7 +56,7 @@ VesiCounter runs in the Google Colaboratory cloud environment; therefore, no add
 
 # Algorithm
 
-Makes circle Hough transform on images to detect round objects, filtering out circles not possessing defined percentage of selected color and continuous black halo. Remaining circles are considered as searched vesicles. For example, we search for red exophers. First, we detect all round objects on an image (also noisy ones) according to customized circle Hough transforms parameters. Next, circles that are not e.g., at least 40% red and are not e.g., at least 60% on a black background, were filtered out.
+VesiCounter performs circle Hough transform on images to detect round objects, filtering out circles not possessing defined percentage of selected color and continuous black halo. Remaining circles are considered as searched vesicles. For example, we search for red exophers. First, we detect all round objects on an image (also noisy ones) according to customized circle Hough transforms parameters. Next, circles that are not e.g., at least 40% red and are not e.g., at least 60% on a black background, were filtered out.
 
 If we additionally want to detect vesicles containing a cellular component of interest marked with a different color, we check 3 corresponding images (focal planes -1, 0, +1) from the second channel to see if our correctly detected vesicles are e.g., at least 2% green.
 
@@ -100,8 +100,6 @@ Each split Z-stack should be placed in a separate directory. Group of single ima
 5. Plugins -> Macros -> export_images_folder -> [Choose path to directory with all Z-stacks]
 
 Now all the Z-stacks should be splitted to separate images (considering their different focal planes and channels)!
-
-
 
 # Output
 
