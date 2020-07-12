@@ -52,7 +52,7 @@ VesiCounter runs in the Google Colaboratory cloud environment; therefore, no add
 1. Detects and counts round objects, i.e., vesicles from separate Z-stack photos, paying attention not to count twice the same vesicle from consecutive photos.
 2. Allows for easy and extensive parameter customization.
 3. Vesicles and their content can be fluorescently labeled in 5 different colors: red, green, orange, pink, and blue.
-4. Displayed all found objects in images so the user may easily change  detection parameters to set the thresholds according to needs
+4. Displayed all found objects in images so the user may easily change  detection parameters to set the thresholds according to needs.
 
 # Input image formats
 
