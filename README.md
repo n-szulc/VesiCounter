@@ -219,7 +219,7 @@ We welcome any feedback, please send an email to Natalia Szulc, @n-szulc ![](htt
 
 # Acknowledgments
 
-Special thanks to Dr. Małgorzata Piechota for all the suggestions on vesicles recognition algorithm design and Konrad Kowalski for sample Z-stack preparation.
+Special thanks to Dr. Małgorzata Piechota for all the suggestions on vesicles' recognition algorithm design and Konrad Kowalski for sample Z-stack preparation, as well as to all the members of [Pokrzywa Lab](https://pokrzywalab.com).
 
 # How to cite
 
